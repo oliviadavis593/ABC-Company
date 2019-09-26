@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body > header {
+    flex-grow: 1;
+}
+
+body > i {
+    flex-grow: 0;
+}
+
+/*Logo Content*/
+.logo > img{
+    width: 45px;
+}
+
+
+/*Nav Bar*/
+.navbar {
+  background-color: #666;
+  padding: 20px;
+  color: white;
+  width: 100%;
+}
+
+/*Hamburger Navigation*/
+
+.hamburger {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+/*product section*/
+
+.product {
+    border: 1px solid lightgrey;
+    display: fixed;
+    border-radius: 10px;
+    margin: 10px 30px; /*MIGHT NEED TO CHANGE*/
+}
+
+/*Footer Section*/
+
+.social {
+  list-style: none;
+  display: flex;
+  padding-top: 20px; 
+  align-items: center;
+  justify-content: space-evenly; 
+  border-top: 1px solid lightgray;
+  border-radius: 4px;
+}
+
+
+
+/*Phone*/
+@media screen and (min-width: 500px) {
+    .menu {
+        display: none;
+    }
+    .logo {
+        float: none;
+    }
+}
+
+
+ /*Tablet*/
+ @media screen and (min-width: 700px) {
+
+     .logo img {
+        float: left;
+        
+     }
+     .menu {
+         display: none;
+     }
+ }
+
+ 
+
+ /*Desktop*/
+
+ @media screen and (min-height: 900px) {
+    .product {
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: center;
+      }
+
+      .menu {
+
+      }
+
+     main {
+        display: inline-flex;
+     }
+
+     .hamburger {
+         display: none;
+     }
+     
+ }
